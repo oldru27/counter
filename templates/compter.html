@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<a href="{% url 'debut' %}">Recommencer</a>
+<h2>{{param1}}</h2>
+<h2>{{param2}}</h2>
+<h2>{% for word, countotal in param3 %}
+    {{word}}
+    <br/>
+    {{countotal}}
+    <br/>
+    {% endfor %}
+</h2>
+</body>
+</html>
